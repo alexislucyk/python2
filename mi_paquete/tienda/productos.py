@@ -5,6 +5,10 @@ class Prod():
 
     def __str__(self):
         return f'Producto: {self.__producto}, Precio: {self.__precio}'
+    
+    def __getitem__(self, item):
+        return self.__producto(item)
+
 
 prod1=Prod('Monitor HP 24"', 500)
 prod2=Prod('Teclado Redragon K551', 200)
